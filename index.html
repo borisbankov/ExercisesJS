@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="script.js" defer></script>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			margin:0;
+			font-family: "Segoe UI", "Roboto";
+		}
+
+		.container{
+			max-width:1320px;
+			margin: 0 auto;
+		}
+
+		.row{
+			display:flex;
+			flex-direction: row;
+		}
+
+		.row>*{
+			max-width:100%;
+			width:100%;
+		}
+
+		.text-white{
+			color:white;
+		}
+
+		.text-blue{
+			color: rgb(13, 110, 253);
+		}
+
+		.bg-blue{
+			background: rgb(13, 110, 253)
+		}
+
+		.bg-green{
+			background: rgb(25, 135, 84);
+		}
+
+		.text-green{
+			color:	rgb(25, 135, 84);
+		}
+		.col-4{
+			width:33.33333333%;
+			padding:0 12px;
+		}
+
+		.col-8{
+			width:66.66666667%;
+			padding:0 12px;
+		}
+
+		.col-6{
+			width:50%;
+			padding:0 12px;
+		}
+
+		.card{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			min-width: 0;
+			word-wrap: break-word;
+			background-clip: border-box;
+			border: 1px solid rgba(0, 0, 0, 0.125);
+			border-radius: 0.25rem;
+	    }
+
+	    .card-header{
+	      	padding: 8px 16px;
+	      	border-radius:4px;
+	      	border-bottom: 1px solid gray;
+	    }
+
+
+	    .card-body{
+	    	padding:16px;
+	    }
+
+		.heading{
+			font-size:56px;
+			font-weight:300;
+			line-height: 1.2;
+		}
+
+	    .btn{
+	      display: inline-block;
+	      text-align: center;
+	      vertical-align: middle;
+	      border: 1px solid transparent;
+	      padding: 8px 12px;
+	      border-radius: 4px;
+	      cursor:pointer;
+	      text-decoration:none;
+	    }
+
+
+	    .btn-blue{
+	    	color:white;
+	    	background-color: #0a58ca;
+    		border-color: #0a53be;
+	    }
+
+	    .btn-yellow{
+	    	color: #000;
+		    background-color: #ffcd39;
+		    border-color: #ffc720;
+	    }
+
+	    .title{
+	    	font-size:48px;
+			font-weight:300;
+			line-height: 1.2;
+	    }
+
+	    .fst-italic{
+	    	font-style:italic;
+	    }
+
+	    .p-40{
+	    	padding:40px;
+	    }
+
+	    .p-16{
+	    	padding:16px;
+	    }
+
+	    .mt-40{
+	    	margin-top:40px;
+	    }
+	    .mx-8{
+	    	margin-left:8px;
+	    	margin-right:8px;
+	    }
+		.nav{
+			list-style-type:none;
+			margin:0px;
+			display:flex;
+			line-height:1.5;
+		}
+
+		.nav-link{
+			display:block;
+			padding:8px 16px;
+			text-decoration: none;
+		}
+
+		.nav-item{
+			border-bottom:solid 1px white;
+			border-radius:3px;
+		}
+
+		.justify-content-right{
+			justify-content:end;
+		}
+
+		.round-border{
+			border-radius:4px;
+		}
+
+		.badge{
+		    padding: 3px 6px;
+		    font-size: 12px;
+		    font-weight: bold;
+		    color: #fff;
+		    border-radius: 4px;
+		    background:gray;
+		}
+		.heading{
+			font-weight:bold;
+			font-size:32px;
+			margin-bottom:12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<ul class="nav bg-green round-border p-16 justify-content-right">
+				<li class="nav-item mx-8">
+					<a href="" class="nav-link text-white">Homepage</a>
+				</li>
+				<li class="nav-item mx-8">
+					<a href="" class="nav-link text-white">About us</a>
+				</li>
+				<li class="nav-item mx-8">
+					<a href="" class="nav-link text-white">Services</a>
+				</li>
+				<li class="nav-item mx-8">
+					<a href="" class="nav-link text-white">Contact us</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row mt-40">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-header bg-green text-white"> Our Agenda </div>
+					<div class="card-body">
+						<h1 class="title">
+							Help the community
+						</h1>
+						<div class="mt-40">
+							<p class="text-green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsa cumque optio voluptatum non facere porro ea velit</p>
+							<a href="#" class="btn btn-blue">Find out how</a>
+							<a href="#" class="btn btn-yellow">Check our Linktr.ee</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="card">
+					<div class="card-header bg-green text-white"> Meet the team </div>
+					<div class="card-body">
+						<h1 class="title">
+							Hear the inspiring story
+						</h1>
+						<p class="mt-40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsa cumque optio voluptatum non facere porro ea velit, iure ipsam quaerat expedita deserunt quidem ratione, atque quod recusandae molestias dignissimos. <a href="#" class="badge"> Read more </a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row mt-40">
+			<div class="col-4">
+				<div class="heading text-green">
+					Features
+				</div>
+				<ul>
+					<li class="fst-italic text-blue">
+						Agile development
+					</li>
+					<li class="fst-italic text-blue">
+						Senior expertise
+					</li>
+					<li class="fst-italic text-blue">
+						Multicultural methodology
+					</li>
+					<li class="fst-italic text-blue">
+						Guaranteed upkeep
+					</li>
+				</ul>
+			</div>
+			<div class="col-8 bg-blue p-40">
+				<svg width="100%" height="100">
+					<rect width="100%" height="100%" fill="#868e96"></rect>
+					<text x="40%" y="50%" fill="#dee2e6">
+						Responsive image
+					</text>
+				</svg>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
