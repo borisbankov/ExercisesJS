@@ -54,3 +54,25 @@ const task6 = () => {
 }
 
 task6();
+
+const task7 = () => {
+	let h = document.querySelectorAll('.card-header');
+	h.forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.target.style.position = 'absolute';
+			e.target.style.bottom = '0px';
+			e.target.parentNode.style.position = 'relative';
+		});
+	});
+}
+
+task7();
+
+const task8 = () => {
+	let badge = document.querySelector('.badge');
+	badge.addEventListener('click', (e) => {
+		e.target.parentNode.innerHTML = e.target.parentNode.innerHTML + ' Lorem Ipsum';
+	});
+}
+
+task8();
